@@ -1,5 +1,6 @@
 html {
   box-sizing: border-box;
+  scrollbar-gutter: stable;
 }
 
 *,
@@ -22,4 +23,46 @@ button {
   padding: 0;
   border: 0;
   cursor: pointer;
+}
+body{
+  font-family: sans-serif;
+  color: #FFF;
+  background-color: #181818;
+  min-height: 100vh;
+  padding: 100px 15px 50px;
+  scrollbar-gutter: stable;
+}
+.dialog{
+  position: fixed;
+  margin: 0;
+  width: 400px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.dialog::backdrop{
+  background-color: (0 0 0 / 0.8);
+}
+
+.dialog__inner{
+  padding: 50px;
+  text-align: center;
+}
+.dialog p{
+  margin-bottom: 50px;
+}
+.open-modal{
+  position: absolute;
+  top: 30px;
+  right: 50px;
+  font-size: 20px;
+  padding: 5px 45px;
+  cursor: pointer;
+}
+.close-modal{
+  font-size: 20px;
+  padding: 5px 45px;
+}
+.scroll-block{
+  overflow: hidden;
 }
