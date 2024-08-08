@@ -18,12 +18,7 @@ ul {
   list-style-type: none;
 }
 
-button {
-  background-color: transparent;
-  padding: 0;
-  border: 0;
-  cursor: pointer;
-}
+
 body{
   font-family: sans-serif;
   color: #FFF;
